@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>NCoreUtils</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NCoreUtils.Extensions.Collections" Version="8.0.0" />
+    <PackageReference Include="NCoreUtils.Extensions.Google.Cloud.Abstractions" Version="8.1.1" />
+    <PackageReference Include="NCoreUtils.Extensions.String" Version="8.0.0" />
+    <PackageReference Include="OpenTelemetry" Version="1.8.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCoreUtils.OpenTelemetry.GoogleCloudTrace.Abstractions\NCoreUtils.OpenTelemetry.GoogleCloudTrace.Abstractions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NCoreUtils.Proto.Client" Version="$(ProtoVersion)" />
+    <PackageReference Include="NCoreUtils.Proto.Generator" Version="$(ProtoVersion)" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
